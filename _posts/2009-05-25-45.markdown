@@ -1,0 +1,17 @@
+---
+layout: post
+status: publish
+published: true
+title: Drizzle source tarball 1033 released
+author: Lee Bieber
+author_login: lbieber
+author_email: kalebral@gmail.com
+wordpress_id: 45
+wordpress_url: http://blog.drizzle.org/?p=45
+date: 2009-05-25 16:13:13.000000000 +00:00
+categories:
+- Release
+tags: []
+comments: []
+---
+<a href="https://launchpad.net/drizzle/trunk/aloha" target="_blank">Drizzle source tarball</a> based on build 1033 has now been released. We are also now including a change log so you can get a sense of what has gone into each release. For this release we continue to focus on code clean up, build improvements, increased test coverage and performance improvements. This release also now provides support for <a href="http://code.google.com/apis/protocolbuffers/docs/overview.html" target="_blank">protobuf 2.1</a>

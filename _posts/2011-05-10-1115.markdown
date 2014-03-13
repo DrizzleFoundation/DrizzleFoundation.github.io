@@ -1,0 +1,70 @@
+---
+layout: post
+status: publish
+published: true
+title: Drizzle source tarball 2011.05.17 has been released
+author: Patrick Crews
+author_login: pcrews
+author_email: gleebix@gmail.com
+wordpress_id: 1115
+wordpress_url: http://blog.drizzle.org/?p=1115
+date: 2011-05-10 12:26:14.000000000 +00:00
+categories:
+- Release
+tags: []
+comments:
+- id: 186
+  author: Stewart Smith
+  author_email: stewart@flamingspork.com
+  author_url: http://www.flamingspork.com/blog/
+  date: '2011-05-12 22:03:58 +0000'
+  date_gmt: '2011-05-13 06:03:58 +0000'
+  content: I increasingly think we should just cut over to using dbqp instead of test-run.pl
+    for everything. Even *I* am tending to use it by default now!
+- id: 187
+  author: Patrick Crews
+  author_email: gleebix@gmail.com
+  author_url: http://wc220.com
+  date: '2011-05-13 13:06:04 +0000'
+  date_gmt: '2011-05-13 21:06:04 +0000'
+  content: 'I''m working on a plan for doing this >: )'
+- id: 188
+  author: Patrick Crews
+  author_email: gleebix@gmail.com
+  author_url: http://wc220.com
+  date: '2011-05-13 14:43:55 +0000'
+  date_gmt: '2011-05-13 22:43:55 +0000'
+  content: btw, I do recognize that as high praise - thanks!
+- id: 189
+  author: Braves girls lacrosse starts slow, finishes strong to beat Blue Devils by
+    one | girls videos
+  author_email: ''
+  author_url: http://girls-videos.info/girlsvideos/392
+  date: '2011-05-15 23:47:59 +0000'
+  date_gmt: '2011-05-16 07:47:59 +0000'
+  content: '[...] Drizzle source tarball 2011.05.17 has been released &#8211; drizzle.org
+    [...] '
+---
+<div>
+
+Drizzle source tarball, version 2011.05.17 has been released.
+This is a release of the <a href="https://launchpad.net/drizzle/fremont">Fremont</a> series and is a development release.  Our stable <a href="../../2011/04/2011/03/15/drizzle-2011-03-12-ga-tarball-has-been-released/">GA release</a> can be found <a href="https://launchpad.net/drizzle/+milestone/2011-03-14">here</a>.
+
+A bit of a thin release, but we have been quite busy with ramping up for Google's Summer of Code and some general reorganization after the news you may have read <a href="http://www.linuxjedi.co.uk/?p=193">here</a>.  Lots of cool things are incubating though - improvements to replication, <a href="http://www.flamingspork.com/blog/2011/03/23/multi-tenancy-drizzle/">catalogs</a> (native multi-tenancy support? what?), and <a href="http://www.flamingspork.com/blog/2011/04/21/http-json-alsosql-interface-to-drizzle/">other cool bits</a> (You can also read more <a href="http://openlife.cc/blogs/2011/april/reflections-mysql-conference-part-iii-my-own-activities">here</a>.  Henrik details some of Stewart's heroics toward the end of the post).
+
+Please keep the feedback and bugs coming, they help a lot and it is great to see people using the software!
+
+&nbsp;
+
+In this release:
+<ul>
+	<li>Various fixes and updates around libdrizzle (thanks Marc Isambart)</li>
+	<li> Continued code refactoring (thanks Olaf)</li>
+	<li>Continued work on dbqp, Drizzle's soon-to-be test-runner</li>
+	<li>Work on uuid's for replication</li>
+	<li>Refactoring work on iocached-rename</li>
+	<li>Continued work on docs</li>
+</ul>
+The Drizzle download file can be found <a href="https://launchpad.net/drizzle/fremont/2011-05-09">here</a>
+
+</div>

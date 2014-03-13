@@ -1,0 +1,86 @@
+---
+layout: post
+status: publish
+published: true
+title: Drizzle 7.1 Release Candidate 7.1.32-rc has been released
+author: Henrik Ingo
+author_login: henrik
+author_email: henrik.ingo@avoinelama.fi
+wordpress_id: 1239
+wordpress_url: http://blog.drizzle.org/?p=1239
+date: 2012-03-24 03:38:49.000000000 +00:00
+categories:
+- Uncategorized
+tags: []
+comments:
+- id: 233
+  author: Drizzle 7.1 Release Candidate 7.1.32-rc has been released &laquo; async
+    I/O News
+  author_email: ''
+  author_url: http://asyncionews.com/?p=1291
+  date: '2012-03-26 09:18:39 +0000'
+  date_gmt: '2012-03-26 17:18:39 +0000'
+  content: '[...] Read full article  Tagged as: Cloud, DB, Drizzle, InnoDB, MySQL
+    Comments Off     Comments (0) Trackbacks (0) ( subscribe to comments on this post
+    ) [...] '
+---
+<div>
+<div>
+
+This is the third and hopefully final Release candidate for Drizzle 7.1
+
+Tar ball, Debian package and RPMs available.
+
+<strong>Changes since previous release:</strong>
+
+* libdrizzle is no longer installed by these packages. To install libdrizzle, see lp:libdrizzle launchpad project. Libdrizzle so-version was bumped to 4.0.0.
+* Removed Transaction Log (includes drizzletrx command line utility) and Replication Dictionary (Brian Aker)
+
+<strong>Bugs and other minor fixes:</strong>
+
+* <a href="https://bugs.launchpad.net/drizzle/+bug/932467">Bug fixed</a>: The Regex Policy plugin could consume unbounded amounts of memory, which could be used for denial of service attacks. (Clint Byrum.)
+* <a href="https://bugs.launchpad.net/drizzle/+bug/935866">Bug fixed</a>: Drizzled could crash when filesystem permissions cause writing a pid file to fail. (Brian Aker)
+* Bug fixed: An undocumented ipv6_function was enabled and could crash drizzled if called - the function was disabled. (Fixed by Henrik Ingo.)
+* <a href="https://bugs.launchpad.net/drizzle/+bug/946058">Bug fixed</a>: In master master setup, slave plugin would try to apply transactions originating from itself. (Joe Daly)
+* Bug fixed: Fix performance regression introduced with catalog being added to key. (Brian Aker)
+* Bug fixed: actually return the next exception in Exception::getNextException() &amp; Fix for execute parser to recognize escaped semicolons. (David Shrewsbury)
+* <a href="https://bugs.launchpad.net/drizzle/+bug/911948">Bug fixed</a>:  A typo in assertion causing false positive failure with log &gt; 4GB. (Laurynas Biveinis)
+* Updated <a href="http://docs.drizzle.org/">docs</a>. Check out comprehensive replication documentation! (Daniel Nichter, Henrik Ingo, Muhammad Umair, Brian Aker, et.al.)
+* Cleanups to drizzle and drizzled --help output and error messages. Standardize plugin names. (Daniel Nichter, Mohit Srivastava)
+* Updates and cleanups to the Kewpie testing suite. Enable more automated CI process. (Patrick Crews, Olaf van der Spek)
+
+</div>
+<strong>Changes in Drizzle 7.1 series since Drizzle 7 include:</strong>
+
+- Multi-master replication
+- Servers are identified with UUID in replication
+- HTTP JSON interface available (experimental)
+- Percona Innodb patches merged
+- Xtrabackup in-tree
+- IPV6 data type available
+- Query log plugin
+- Log output to syslog is enabled by default
+- Ability to publish transactions to zeromq and rabbitmq
+- Improvements to logging stats plugin
+- Native multi-tenancy (database virtualization) support (catalogs)
+- Removal of drizzleadmin utility (you can now do all administration from drizzle client itself)
+- Removal of HailDB engine
+- Revamped testing system Kewpie all-inclusive with suites of randgen, sysbench, sql-bench, and crashme tests
+- Continued code refactoring &amp; various bug fixes
+
+</div>
+<strong>Installing Drizzle 7.1.32-rc</strong>
+
+The source tar package is available from our <a href="https://launchpad.net/drizzle/+milestone/7.1.32-rc">Launchpad download area</a>.<strong> </strong><a href="http://docs.drizzle.org/installing/from_source.html" target="_blank">Please see the manual on how to install Drizzle 7.1.32-rc from source tar package.</a>
+
+The Ubuntu packages are available from the <a href="https://launchpad.net/%7Edrizzle-developers/+archive/ppa" target="_blank">Drizzle PPA</a>. Instructions on <a href="http://docs.drizzle.org/installing/ubuntu.html" target="_blank">how to install from the PPA are in the Drizzle manual</a>.
+
+CentOS 6 packages are available from <a href="http://download.drizzle.org/7.1/" target="_blank">download.drizzle.org</a>. <a href="http://docs.drizzle.org/installing/redhat.html" target="_blank">Instructions on how to install them with yum are in the Drizzle manual.</a>
+
+Note: For Drizzle 7.1.32-rc, only 64-bit packages were built for RedHat/Centos. Please let us know if there is demand for 32-bit packages (such as by commenting to this blog post.)
+
+<strong>Known issues</strong>
+
+All of the optional plugins are packaged in their own package. These are named drizzle-plugin-*. If a plugin is installed, it is also configured to load by default. (see /etc/drizzle/conf.d/<wbr>pluginname.cnf) However, not all plugins actually work without further configuration. These plugins will cause the server startup to fail. The workaround is to either configure the plugin to work, or uninstall it if you don't want to use it. (<a href="https://blueprints.launchpad.net/drizzle/+spec/plugin-standards" target="_blank">Related blueprint</a>) In short, you should only install the plugins you want to use. Don't install all available plugins.</wbr>
+
+Please post bugs on the <a href="https://bugs.launchpad.net/drizzle">Drizzle bug tracker</a> and questions and general feedback to <a href="https://launchpad.net/%7Edrizzle-discuss/">drizzle-discuss mailing list</a>.
