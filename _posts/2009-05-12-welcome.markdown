@@ -1,0 +1,21 @@
+---
+layout: post
+status: publish
+published: true
+title: Welcome!
+author: Michael Shadle
+author_login: mike
+author_email: mike503@gmail.com
+wordpress_id: 7
+wordpress_url: http://blog.drizzle.org/?p=6
+date: 2009-05-12 22:11:28.000000000 +00:00
+categories:
+- Website
+tags: []
+comments: []
+---
+Welcome to the "official" Drizzle blog (more or less...)
+
+Expect this place to be home to the "This Week In Drizzle" series and hopefully other relevant tidbits of information!
+
+I'll be hacking up the WordPress theme to make it match the rest of the site more, and will be looking at adding links to the main contributors on the blogroll. More authors and key members will be added as well, so expect some good content soon :)

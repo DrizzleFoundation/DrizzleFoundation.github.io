@@ -1,0 +1,17 @@
+---
+layout: post
+status: publish
+published: true
+title: Drizzle and Gearman in Boston next week
+author: Lee Bieber
+author_login: lbieber
+author_email: kalebral@gmail.com
+wordpress_id: 143
+wordpress_url: http://blog.drizzle.org/?p=143
+date: 2009-06-30 08:21:23.000000000 +00:00
+categories:
+- This Week In Drizzle
+tags: []
+comments: []
+---
+<a href="http://www.oddments.org/">Eric Day</a> will be heading back to his home state (Maine) next week for a visit, and while there both Eric and <a href="http://capttofu.livejournal.com/">Patrick Galbraith</a>  will be talking at the <a href="http://www.meetup.com/mysqlbos/">Boston MySQL Meetup Group</a> on Monday night about <a href="http://drizzle.org/">Drizzle</a>, <a href="http://www.gearman.org/">Gearman</a>, and how to combine the two with projects like <a href="https://launchpad.net/narada">Narada</a>. If you are in the Boston area, be sure to check it out!
